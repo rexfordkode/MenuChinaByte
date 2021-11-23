@@ -254,18 +254,21 @@ restaurant.name,
    JOIN address 
    ON restaurant.id = address.id;
 
+ SELECT 
+ dish.name 
+ AS dishname FROM dish;
+ 
 SELECT 
 MAX(rating) 
 AS best_rating 
 FROM restaurant;
 
 -- 
-
-
-
+SELECT constraint_name, table_name, column_name
 FROM
    information_schema.key_column_usage
  WHERE
    table_name = 'category';
+
 
 
